@@ -21,6 +21,7 @@ export default function UseReducer2() {
   return (
     <div>
       <div>
+        <h1>2</h1>
           <h4>{count.firstCount}</h4>
         <button onClick={() => dispatch({type: 'increnent'})}>Increment</button>
         <button onClick={() => dispatch({type: 'decrement'})}>Decrement</button>
