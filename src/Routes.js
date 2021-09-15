@@ -1,9 +1,14 @@
 import { Route, Switch } from "react-router-dom";
-import FetchWithUse from "./components/FetchWithUse";
-import UseContext from "./components/UseContext";
-import UseEffect from "./components/UseEffect";
-import UseReducer from "./components/UseReducer";
-import UseState from "./components/UseState";
+import CustomHook from "./components/customHook/CustomHook";
+import FetchWithUse from "./components/fetchwithuseEffect/FetchWithUse";
+import UseCallback from "./components/useCallback/UseCallback";
+import UseContext from "./components/useContext/UseContext";
+import UseEffect from "./components/useEffect/UseEffect";
+import UseMemo from "./components/useMemo/UseMemo";
+import UseReducer from "./components/useReducer/UseReducer";
+import UseRedWithUseCont from "./components/useRedWithUseCont/UseRedWithUseCont";
+import UseRef from "./components/useRef/UseRef";
+import UseState from "./components/useState/UseState";
 
 function Routes() {
   return (
@@ -22,6 +27,21 @@ function Routes() {
       </Route>
       <Route path="/useReducer">
         <UseReducer/>
+      </Route>
+      <Route path="/useReducer-with-useContext">
+        <UseRedWithUseCont/>
+      </Route>
+      <Route path="/useCallback">
+        <UseCallback/>
+      </Route>
+      <Route path="/useMemo">
+        <UseMemo/>
+      </Route>
+      <Route path="/useRef">
+        <UseRef/>
+      </Route>
+      <Route path="/custo-hooks">
+        <CustomHook/>
       </Route>
     </Switch>
   );

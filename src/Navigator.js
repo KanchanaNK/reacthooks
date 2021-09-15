@@ -19,6 +19,24 @@ export default function Navigator() {
       <div>
         <Link to="/useReducer">useReducer</Link>
       </div>
+      <div>
+        <Link to="/useReducer-with-useContext">useReducer with Context</Link>
+      </div>
+      <div>
+        <Link to="/useReducer-fetch">useReducer Fetch</Link>
+      </div>
+      <div>
+        <Link to="/useCallback">useCallback</Link>
+      </div>
+      <div>
+        <Link to="/useMemo">useMemo</Link>
+      </div>
+      <div>
+        <Link to="/useRef">useRef</Link>
+      </div>
+      <div>
+        <Link to="/custo-hooks">custum Hooks</Link>
+      </div>
     </nav>
   );
 }

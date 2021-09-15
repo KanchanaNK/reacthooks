@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import UseReducer2 from "./UseReducer2";
+import UseReducer3 from "./UseReducer3";
 
 const initialState = 0;
 const reduser = (state, action) => {
@@ -27,6 +28,9 @@ export default function UseReducer() {
       </div>
       <div>
           <UseReducer2/>
+      </div>
+      <div>
+        <UseReducer3/>
       </div>
     </div>
   );

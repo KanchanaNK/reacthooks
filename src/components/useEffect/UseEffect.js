@@ -4,7 +4,6 @@ import UseEffectWithCleanU from "./UseEffectWithCleanU";
 export default function UseEffect() {
   const [count, setCount] = useState(0);
   const [setName] = useState("");
-
   useEffect(() => {
     console.log("updating 1");
     document.title = `Count - ${count}`;
